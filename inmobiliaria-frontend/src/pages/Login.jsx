@@ -6,6 +6,7 @@ import { useAuth } from "../hooks/useAuth";
 import { GoogleLogin } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import "../styles/Login.css";
+import "../styles/Global.css";
 
 const Login = () => {
   const [formData, setFormData] = useState({

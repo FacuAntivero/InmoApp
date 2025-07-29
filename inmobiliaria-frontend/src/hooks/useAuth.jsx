@@ -55,7 +55,8 @@ export const AuthProvider = ({ children }) => {
       return userData;
     } catch (error) {
       throw new Error(
-        error.response?.data?.message || "Error al iniciar sesión"
+        error.response?.data?.message ||
+          "Error al iniciar sesión, datos incorrectos."
       );
     }
   };
